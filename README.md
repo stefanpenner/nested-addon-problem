@@ -9,6 +9,7 @@ digraph nested_addons {
   "addon-b" -> "addon-d@1.0.0 (2)";
 }
 ```
+![](diagrams/current.png)
 
 where A, B, C, D, are all ember-addons
 
@@ -46,6 +47,7 @@ digraph nested_addons {
   "addon-b" -> "addon-d@1.0.0[app] (2)";
 }
 ```
+![](diagrams/proposed-detailed.png)
 
 * app continues to be built twice, once under the b namespace and once under the c namespace.
 * addon is only built once (per version), as the subsequent merge makes this pointless.
